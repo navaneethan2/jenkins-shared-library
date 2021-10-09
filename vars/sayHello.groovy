@@ -1,5 +1,14 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-    echo "Hello, ${name}."
+
+pipeline{
+    agent any
+
+    stages{
+        stage('Debug'){
+            echo "${env.JOB_BASE_NAME}"
+
+        }
+    }
+
 }
