@@ -7,8 +7,6 @@ pipeline{
     stages{
         stage('Debug'){
             echo "${env.JOB_BASE_NAME}"
-
         }
     }
-
 }
